@@ -1,0 +1,23 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+ 
+<body>
+
+<form action="validate.php" method="post">
+<input type="text" name="code" />
+
+<img id="code1" src="index.php" alt="看不清楚，换一张" style="cursor: pointer; vertical-align:middle;" onclick="changeCode()"/>
+<button type="submit">提交</button>
+</form>
+<script>
+    //数字验证 
+    function changeCode(){ 
+        document.getElementById("code1").src="index.php?"+ Math.random();
+    }
+</script>
+</body>
+</html>
